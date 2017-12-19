@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>api</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-app="api">
+<div class="container" ng-controller="control">
+hello
+{{name}}
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in sou">
+        <td>{{x.name}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.username}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    <div class="container" ng-controller="mainCtrl">
+    {{name}}
+      <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users">
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.username}}</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.6/angular-resource.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
